@@ -31,7 +31,7 @@ public class TaskControllerTest {
 	public void naoDeveSalvarTarefaSemDescricao(){
 		Task task = new Task();
 		task.setTask("teste!!!");
-		task.setDueDate(LocalDate.of(1900, 01, 01));
+		task.setDueDate(LocalDate.now());
 		
 		try {
 			taskController.save(task);
